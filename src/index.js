@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -109,6 +110,7 @@ class Game extends React.Component {
       <div className="game">
         <div className="game-board">
           <Board
+
             squares={current.squares}
             onClick={i => this.handleClick(i)}
           />
